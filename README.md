@@ -1,10 +1,10 @@
-# SnapPack 📸
+# SnapPack
 
 SnapPack is the ultimate companion app for your Snapchat Memories. It allows you to download, organize, and secure your exported Snapchat data locally on your device, ensuring your memories are always accessible, even offline.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Lossless Import**: Recover your photos and videos in their original quality directly from Snapchat's JSON export.
 - **Secure Local Storage**: Your media stays on your device—no cloud, no tracking, just your privacy.
@@ -16,7 +16,7 @@ SnapPack is the ultimate companion app for your Snapchat Memories. It allows you
 
 ---
 
-## 🚀 How to Get Started
+## How to Get Started
 
 To use SnapPack, you first need to export your data from Snapchat. Follow these steps:
 
@@ -38,37 +38,37 @@ Snapchat will process your request (usually within 24 hours). Once you receive t
 
 ---
 
-## 🛠 Usage Instructions
+## Usage Instructions
 
-### 🖼 Gallery
+### Gallery
 - Browse your memories in a beautiful, organized grid.
 - Sort by newest, oldest, or by year.
 - Select multiple items to share, delete, or move to your protected vault.
 
-### 📥 Downloader
+### Downloader
 - Track your download progress in real-time.
 - View successful, pending, and failed (expired) links.
 - Use the **"Clean Up"** tool to remove any legacy broken files.
 
-### 🔐 Locker
+### Locker
 - Access your private vault by tapping the shield icon in the Gallery.
 - Set a custom passcode to keep your most private memories safe from prying eyes.
 
 ---
 
-## 🌍 Language Support
+## Language Support
 
 SnapPack is built for a global audience. You can switch between **English** and **Arabic** at any time from the Onboarding/Tutorial screen using the globe icon in the corner.
 
 ---
 
-## ⚖️ Disclaimer
+## Disclaimer
 
 SnapPack is an independent utility and is not affiliated with, endorsed by, or sponsored by Snapchat or Snap Inc. Use this tool in accordance with Snapchat's Terms of Service.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Created by [Amr Mafalani](https://github.com/AfterMath9)
 Follow on X: [@iBadDroid](https://x.com/iBadDroid)
