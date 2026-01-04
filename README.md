@@ -23,18 +23,19 @@ To use SnapPack, you first need to export your data from Snapchat. Follow these 
 ### Step 1: Request Your Data
 Open Snapchat settings, go to **"My Data"**, and request an export. **CRITICAL:** Ensure you select the **JSON** format option.
 
-![Request Data](media/image1.jpeg)
+<img src="media/image1.jpeg" width="300" alt="Requesting Data from Snapchat">
 
 ### Step 2: Extract the File
-Snapchat will process your request (usually within 24 hours). Once you receive the email, download the ZIP file to your device. Extract it and locate the file named `memories_history.json`.
-
-![Extract JSON](media/image2.jpeg)
+Snapchat will process your request (usually within 24 hours). Once you receive the email, download the ZIP file to your device and extract it.
 
 ### Step 3: Import into SnapPack
 1. Open the **Downloader** tab in SnapPack.
-2. Tap **"Select Media File"** and choose your `memories_history.json` file.
-3. Tap **"Start Download"**. 
-4. Keep the app open while it fetches your media. SnapPack will validate each file and save it directly to your local library.
+2. Tap **"Select Media File"**.
+3. Navigate to your extracted folder and locate the file named `memories_history.json`. **This is the file you must select.**
+
+<img src="media/image2.jpeg" width="300" alt="Selecting the JSON file">
+
+4. Tap **"Start Download"** and wait for the process to complete.
 
 ---
 
