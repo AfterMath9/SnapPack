@@ -1,21 +1,41 @@
-//
-//  ContentView.swift
-//  SnapPack
-//
-//  Created by Amr Mafalani on 2026-01-04.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var session = UserSession()
+    @StateObject var downloadManager: DownloadManager
+    
+    init() {
+        let session = UserSession()
+        _session = StateObject(wrappedValue: session)
+        _downloadManager = StateObject(wrappedValue: DownloadManager(session: session))
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            DownloaderView(downloadManager: downloadManager)
+                .tabItem {
+                    Label("downloader".localized(session.language), systemImage: "square.and.arrow.down")
+                }
+            
+            GalleryView()
+                .tabItem {
+                    Label("gallery".localized(session.language), systemImage: "photo.on.rectangle")
+                }
+            
+            SettingsView()
+                .tabItem {
+                    Label("settings".localized(session.language), systemImage: "gearshape")
+                }
         }
-        .padding()
+        .environment(\.layoutDirection, session.language == "ar" ? .rightToLeft : .leftToRight)
+        .environmentObject(session)
+        .fullScreenCover(isPresented: Binding(
+            get: { !session.hasCompletedOnboarding },
+            set: { session.hasCompletedOnboarding = !$0 }
+        )) {
+            OnboardingView()
+                .environmentObject(session)
+        }
     }
 }
 
